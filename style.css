@@ -1,0 +1,39 @@
+body {
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  font-family: "Times New Roman", Times, serif;
+}
+.lab-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  border: 1px solid #d9d9d9;
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+.lab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.lab-card h2 {
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #000000;
+}
+.lab-card p {
+  color: #000000;
+  font-size: 0.9rem;
+  margin: 0;
+}
