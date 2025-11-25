@@ -6,12 +6,12 @@ const form = document.querySelector("form");
             event.preventDefault();
             const emailValue = emailInput.value.trim();
             if (emailValue.includes("@") && emailValue.includes(".")) {
-                alert(`Чудово! Email "${emailValue}" пройшов перевірку.`);
+                alert(`Email "${emailValue}" пройшов перевірку.`);
                 emailInput.value = "";
                 emailInput.classList.remove("is-invalid");
                 emailInput.classList.add("is-valid");
             } else {
-                alert("Помилка: Введіть коректний Email (має бути @ та крапка).");
+                alert("Помилка. Введіть коректний Email.");
                 emailInput.classList.add("is-invalid");
             }
         });
