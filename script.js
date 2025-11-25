@@ -1,6 +1,6 @@
-const form = document.querySelector("form");
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
     const emailInput = document.querySelector('input[type="email"]');
-    const submitBtn = document.querySelector('button[type="submit"]');
     if (form) {
         form.addEventListener("submit", function (event) {
             event.preventDefault();
@@ -12,7 +12,8 @@ const form = document.querySelector("form");
                 emailInput.classList.add("is-valid");
             } else {
                 alert("Помилка. Введіть коректний Email.");
-                emailInput.classList.add("is-invalid");
+                emailInput.classList.add("is-invalid"); 
             }
         });
     }
+}); 
